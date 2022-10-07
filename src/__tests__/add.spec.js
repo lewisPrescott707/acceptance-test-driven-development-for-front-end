@@ -9,7 +9,7 @@ describe('todo add', () => {
     test('storing input value', async () => {
         render(<Add />);
 
-        await userEvent.type(screen.getByTestId("todo-input"), "second todo item");
+        await userEvent.type(screen.getByTestId('todo-input'), "second todo item");
 
         expect(screen.getByDisplayValue(/second todo item/)).toBeInTheDocument();
     })
