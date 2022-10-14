@@ -33,7 +33,9 @@ jobs:
         lcov-file: ./coverage/lcov.info
         github-token: ${{ secrets.GITHUB_TOKEN }}
     - name: Cypress run
-        uses: cypress-io/github-action@v4
-        with:
-          start: npm start
-          wait-on: 'http://localhost:3000'
+      uses: cypress-io/github-action@v4
+      with:
+        start: npm start
+        wait-on: 'http://localhost:3000'
+      env:
+        APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
