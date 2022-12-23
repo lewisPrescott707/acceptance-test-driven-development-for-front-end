@@ -1,6 +1,6 @@
 module.exports = {
     testConcurrency: 1,
-    apiKey: 'bMlMH2PIaVafpCzu0sBr0Ypg6eOAtSn11HRfzsbIbbo110',
+    apiKey: 'MY_API_KEY',
     batchName: 'TAU Todo App',
     browser: [
         {width: 800, height: 600, name: 'chrome'},
